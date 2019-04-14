@@ -5,4 +5,5 @@
     <string name="numero">Número</string>
     <string name="verificar">Verificar</string>
     <string name="resultado">Resultado</string>
+    <string name="activity_name_ano_bissesto">Ano Bissesto</string>
 </resources>

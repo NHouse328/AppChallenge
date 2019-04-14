@@ -24,17 +24,20 @@
 
     <ScrollView
             android:id="@+id/horizontalScrollView"
-            android:layout_height="200dp"
-            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_width="150dp"
             android:padding="10dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@+id/txv_title_mainScreen"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
     >
+
         <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:padding="@dimen/Pedding"
                 android:orientation="vertical"
         >
@@ -42,14 +45,14 @@
             <Button
                     android:id="@+id/btn_to_screen_par_ou_impar"
                     android:text="@string/activity_name_par_ou_impar"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="@dimen/Pedding"
                     android:textAlignment="center"
             />
             <Button
-                    android:id="@+id/btn_to_screen_2"
-                    android:text="TextView"
+                    android:id="@+id/btn_to_screen_ano_bissesto"
+                    android:text="@string/activity_name_ano_bissesto"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="@dimen/Pedding"
