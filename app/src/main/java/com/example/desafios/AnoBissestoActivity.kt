@@ -3,6 +3,7 @@ package com.example.desafios
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_ano_bissesto.*
 
 class AnoBissestoActivity : AppCompatActivity(), View.OnClickListener {
@@ -12,6 +13,15 @@ class AnoBissestoActivity : AppCompatActivity(), View.OnClickListener {
 
         when(id) {
             R.id.btn_back -> onBackPressed()
+            R.id.btn_verificar_ano_bissesto -> {
+                if (edt_num_ano_bissesto.editableText.isNullOrEmpty()){
+                    Toast.makeText(this,"Digite um número", Toast.LENGTH_SHORT).show()
+                }else {
+                    txv_result_ano_bissesto.text = anoBissesto(edt_num_ano_bissesto.editableText.toString())
+                    edt_num_ano_bissesto.text = null
+
+                }
+            }
         }
     }
 
@@ -24,6 +34,26 @@ class AnoBissestoActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun vincular() {
         btn_back.setOnClickListener(this)
-        //btn_verificar_ano_bissesto.setOnClickListener(this)
+        btn_verificar_ano_bissesto.setOnClickListener(this)
+    }
+
+    fun anoBissesto(ano: String): String {
+        val Ano = ano.toInt()
+
+        val mensagem = "é um ano Bissesto"
+
+        if ((Ano % 4) == 0) {
+            if ((Ano % 100) != 0) {
+                return "$Ano $mensagem"
+            }else {
+                return "$Ano não $mensagem"
+            }
+        }else {
+            if ((Ano % 400) == 0) {
+                return "$Ano $mensagem"
+            }else {
+                return "$Ano não $mensagem"
+            }
+        }
     }
 }
