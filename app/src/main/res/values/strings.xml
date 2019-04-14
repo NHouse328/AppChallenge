@@ -2,4 +2,7 @@
     <string name="app_name">Desafios</string>
     <string name="activity_name_par_ou_impar">Par ou Ímpar</string>
     <string name="voltar">Voltar</string>
+    <string name="numero">Número</string>
+    <string name="verificar">Verificar</string>
+    <string name="resultado">Resultado</string>
 </resources>
