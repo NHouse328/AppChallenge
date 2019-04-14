@@ -7,4 +7,12 @@
         android:layout_height="match_parent"
         tools:context=".ParOuImparActivity">
 
+    <Button
+            android:text="@string/voltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_back"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="17dp"
+            android:layout_marginBottom="17dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
 </android.support.constraint.ConstraintLayout>
