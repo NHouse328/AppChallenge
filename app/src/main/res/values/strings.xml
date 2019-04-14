@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Desafios</string>
+    <string name="activity_name_par_ou_impar">Par ou Ímpar</string>
 </resources>
