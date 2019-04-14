@@ -3,6 +3,7 @@ package com.example.desafios
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_par_ou_impar.*
 
 class ParOuImparActivity : AppCompatActivity(), View.OnClickListener {
@@ -11,6 +12,13 @@ class ParOuImparActivity : AppCompatActivity(), View.OnClickListener {
 
         when(id) {
             R.id.btn_back -> onBackPressed()
+            R.id.btn_verificar_par_ou_impar -> {
+                if (edt_num_par_ou_impar.editableText.isNullOrEmpty()){
+                    Toast.makeText(this,"Digite um número", Toast.LENGTH_SHORT).show()
+                }else {
+                    txv_result_par_ou_impar.text = parOuImpar(edt_num_par_ou_impar.editableText.toString())
+                }
+            }
         }
     }
 
@@ -24,5 +32,15 @@ class ParOuImparActivity : AppCompatActivity(), View.OnClickListener {
     private fun vincular() {
         btn_back.setOnClickListener(this)
         btn_verificar_par_ou_impar.setOnClickListener(this)
+    }
+
+    fun parOuImpar(num: String): String {
+        val numero: Int = num.toInt()
+
+        if((numero % 2) == 0) {
+            return "Par"
+        }else {
+            return "Ímpar"
+        }
     }
 }
