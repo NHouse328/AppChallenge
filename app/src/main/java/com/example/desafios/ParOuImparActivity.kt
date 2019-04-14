@@ -17,6 +17,8 @@ class ParOuImparActivity : AppCompatActivity(), View.OnClickListener {
                     Toast.makeText(this,"Digite um número", Toast.LENGTH_SHORT).show()
                 }else {
                     txv_result_par_ou_impar.text = parOuImpar(edt_num_par_ou_impar.editableText.toString())
+                    edt_num_par_ou_impar.text = null
+
                 }
             }
         }
@@ -38,9 +40,9 @@ class ParOuImparActivity : AppCompatActivity(), View.OnClickListener {
         val numero: Int = num.toInt()
 
         if((numero % 2) == 0) {
-            return "Par"
+            return "$numero é Par !"
         }else {
-            return "Ímpar"
+            return "$numero é Ímpar !"
         }
     }
 }

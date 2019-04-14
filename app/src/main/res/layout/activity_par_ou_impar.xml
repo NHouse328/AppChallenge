@@ -35,9 +35,21 @@
         <EditText
                 android:id="@+id/edt_num_par_ou_impar"
                 android:hint="@string/numero"
-                android:layout_marginBottom="50dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
                 android:inputType="number"
                 android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+        />
+
+        <TextView
+                android:id="@+id/txv_result_par_ou_impar"
+                android:hint="@string/resultado"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
         />
@@ -45,18 +57,10 @@
         <Button
                 android:id="@+id/btn_verificar_par_ou_impar"
                 android:text="@string/verificar"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-        />
-
-        <TextView
-                android:id="@+id/txv_result_par_ou_impar"
-                android:hint="@string/resultado"
-                android:layout_marginTop="50dp"
-                android:textSize="20sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
         />
 
     </LinearLayout>
