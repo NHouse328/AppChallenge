@@ -6,4 +6,6 @@
     <string name="verificar">Verificar</string>
     <string name="resultado">Resultado</string>
     <string name="activity_name_ano_bissesto">Ano Bissesto</string>
+    <string name="activity_name_conversor_de_temperatura">Conversor de Temperatura</string>
+    <string name="ano">Ano</string>
 </resources>

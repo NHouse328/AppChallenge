@@ -36,7 +36,7 @@
 
         <EditText
                 android:id="@+id/edt_num_ano_bissesto"
-                android:hint="@string/numero"
+                android:hint="@string/ano"
                 android:layout_marginTop="25dp"
                 android:layout_marginBottom="25dp"
                 android:inputType="number"

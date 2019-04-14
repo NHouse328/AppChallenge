@@ -25,7 +25,7 @@
     <ScrollView
             android:id="@+id/horizontalScrollView"
             android:layout_height="300dp"
-            android:layout_width="150dp"
+            android:layout_width="230dp"
             android:padding="10dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +37,7 @@
 
         <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:padding="@dimen/Pedding"
                 android:orientation="vertical"
         >
@@ -59,8 +59,8 @@
                     android:textAlignment="center"
             />
             <Button
-                    android:id="@+id/btn_to_screen_3"
-                    android:text="TextView"
+                    android:id="@+id/btn_to_screen_conversor_temperatura"
+                    android:text="@string/activity_name_conversor_de_temperatura"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="@dimen/Pedding"

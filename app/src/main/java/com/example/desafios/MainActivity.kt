@@ -22,7 +22,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 val intent = Intent(this, AnoBissestoActivity::class.java)
                 startActivity(intent)
             }
-            R.id.btn_to_screen_3 -> Toast.makeText(this,"Funciona",Toast.LENGTH_SHORT).show()
+            R.id.btn_to_screen_conversor_temperatura -> {
+                val intent = Intent(this, ConversorDeTemperaturaActivity::class.java)
+                startActivity(intent)
+            }
             R.id.btn_to_screen_4 -> Toast.makeText(this,"Funciona",Toast.LENGTH_SHORT).show()
             R.id.btn_to_screen_5 -> Toast.makeText(this,"Funciona",Toast.LENGTH_SHORT).show()
         }
@@ -38,7 +41,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private fun vincular() {
         btn_to_screen_par_ou_impar.setOnClickListener(this)
         btn_to_screen_ano_bissesto.setOnClickListener(this)
-        btn_to_screen_3.setOnClickListener(this)
+        btn_to_screen_conversor_temperatura.setOnClickListener(this)
         btn_to_screen_4.setOnClickListener(this)
         btn_to_screen_5.setOnClickListener(this)
     }
