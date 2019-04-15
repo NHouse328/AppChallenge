@@ -8,4 +8,8 @@
     <string name="activity_name_ano_bissesto">Ano Bissesto</string>
     <string name="activity_name_conversor_de_temperatura">Conversor de Temperatura</string>
     <string name="ano">Ano</string>
+    <string name="para">para :</string>
+    <string name="de">de :</string>
+    <string name="temperatura">Temperatura</string>
+    <string name="converter">Converter</string>
 </resources>
