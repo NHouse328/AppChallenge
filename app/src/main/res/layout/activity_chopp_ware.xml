@@ -5,10 +5,11 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ParOuImparActivity"
+        tools:context=".ChoppWareActivity"
 >
+
     <TextView
-            android:text="@string/activity_name_par_ou_impar"
+            android:text="@string/activity_name_chopp_ware"
             android:textSize="@dimen/main_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -19,11 +20,7 @@
             app:layout_constraintEnd_toEndOf="parent"
     />
 
-    <LinearLayout
-            android:id="@+id/linearLayout"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:padding="16dp"
+    <ScrollView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
@@ -34,38 +31,21 @@
             app:layout_constraintBottom_toTopOf="@+id/btn_back"
     >
 
-        <EditText
-                android:id="@+id/edt_num_par_ou_impar"
-                android:hint="@string/numero"
-                android:layout_marginTop="25dp"
-                android:layout_marginBottom="25dp"
-                android:inputType="number"
-                android:layout_width="200dp"
+        <LinearLayout
+                android:id="@+id/linearLayout"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
-        />
 
-        <TextView
-                android:id="@+id/txv_result_par_ou_impar"
-                android:hint="@string/resultado"
-                android:layout_marginTop="25dp"
-                android:layout_marginBottom="25dp"
-                android:textSize="20sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-        />
+        >
 
-        <Button
-                android:id="@+id/btn_verificar_par_ou_impar"
-                android:text="@string/verificar"
-                android:layout_marginTop="25dp"
-                android:layout_marginBottom="25dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-        />
 
-    </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
     <Button
             android:id="@+id/btn_back"
@@ -77,4 +57,5 @@
             android:layout_marginBottom="17dp"
             app:layout_constraintEnd_toEndOf="parent"
     />
+
 </android.support.constraint.ConstraintLayout>

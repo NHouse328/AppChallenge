@@ -41,7 +41,7 @@
                 android:padding="@dimen/Pedding"
                 android:orientation="vertical"
         >
-            <!-- TODO! Mudar texto nos Botoẽs -->
+
             <Button
                     android:id="@+id/btn_to_screen_par_ou_impar"
                     android:text="@string/activity_name_par_ou_impar"
@@ -75,8 +75,8 @@
                     android:textAlignment="center"
             />
             <Button
-                    android:id="@+id/btn_to_screen_5"
-                    android:text="TextView"
+                    android:id="@+id/btn_to_screen_chopp_ware"
+                    android:text="@string/activity_name_chopp_ware"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="@dimen/Pedding"

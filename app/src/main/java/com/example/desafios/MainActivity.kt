@@ -4,7 +4,6 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -30,7 +29,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 val intent = Intent(this, ConversorDeComprimentoActivity::class.java)
                 startActivity(intent)
             }
-            R.id.btn_to_screen_5 -> Toast.makeText(this,"Funciona",Toast.LENGTH_SHORT).show()
+            R.id.btn_to_screen_chopp_ware -> {
+                val intent = Intent(this, ChoppWareActivity::class.java)
+                startActivity(intent)
+            }
         }
     }
 
@@ -46,6 +48,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btn_to_screen_ano_bissesto.setOnClickListener(this)
         btn_to_screen_conversor_temperatura.setOnClickListener(this)
         btn_to_screen_conversor_comprimento.setOnClickListener(this)
-        btn_to_screen_5.setOnClickListener(this)
+        btn_to_screen_chopp_ware.setOnClickListener(this)
     }
 }
