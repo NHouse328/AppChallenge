@@ -13,12 +13,12 @@ class AnoBissextoActivity : AppCompatActivity(), View.OnClickListener {
 
         when(id) {
             R.id.btn_back -> onBackPressed()
-            R.id.btn_verificar_ano_bissesto -> {
-                if (edt_num_ano_bissesto.editableText.isNullOrEmpty()){
+            R.id.btn_verificar_ano_bissexto -> {
+                if (edt_num_ano_bissexto.editableText.isNullOrEmpty()){
                     Toast.makeText(this,"Digite um número", Toast.LENGTH_SHORT).show()
                 }else {
-                    txv_result_ano_bissesto.text = anoBissesto(edt_num_ano_bissesto.editableText.toString())
-                    edt_num_ano_bissesto.text = null
+                    txv_result_ano_bissexto.text = anoBissesto(edt_num_ano_bissexto.editableText.toString())
+                    edt_num_ano_bissexto.text = null
 
                 }
             }
@@ -34,7 +34,7 @@ class AnoBissextoActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun vincular() {
         btn_back.setOnClickListener(this)
-        btn_verificar_ano_bissesto.setOnClickListener(this)
+        btn_verificar_ano_bissexto.setOnClickListener(this)
     }
 
     fun anoBissesto(ano: String): String {

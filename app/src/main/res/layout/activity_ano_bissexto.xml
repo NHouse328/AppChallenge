@@ -19,12 +19,8 @@
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
     />
-
-    <LinearLayout
-            android:id="@+id/linearLayout"
+    <ScrollView
             android:orientation="vertical"
-            android:gravity="center"
-            android:padding="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
@@ -35,38 +31,91 @@
             app:layout_constraintBottom_toTopOf="@+id/btn_back"
     >
 
-        <EditText
-                android:id="@+id/edt_num_ano_bissesto"
-                android:hint="@string/ano"
-                android:layout_marginTop="25dp"
-                android:layout_marginBottom="25dp"
-                android:inputType="number"
-                android:layout_width="200dp"
+        <LinearLayout
+                android:id="@+id/linearLayout"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
-        />
+        >
 
-        <TextView
-                android:id="@+id/txv_result_ano_bissesto"
-                android:hint="@string/resultado"
-                android:layout_marginTop="25dp"
-                android:layout_marginBottom="25dp"
-                android:textSize="20sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-        />
+            <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            >
+                <EditText
+                        android:id="@+id/edt_de_ano_bissexto"
+                        android:hint="@string/de"
+                        android:inputType="number"
+                        android:layout_weight="0.5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                />
 
-        <Button
-                android:id="@+id/btn_verificar_ano_bissesto"
-                android:text="@string/verificar"
-                android:layout_marginTop="25dp"
-                android:layout_marginBottom="25dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-        />
+                <EditText
+                        android:id="@+id/edt_ate_ano_bissexto"
+                        android:hint="@string/ate"
+                        android:inputType="number"
+                        android:layout_weight="0.5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                />
 
-    </LinearLayout>
+            </LinearLayout>
+
+            <Spinner
+                    android:id="@+id/spn_result_ano_bissexto"
+                    android:layout_marginBottom="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            >
+
+            </Spinner>
+
+            <Button
+                    android:id="@+id/btn_verificar_de_ate_ano_bissexto"
+                    android:text="@string/verificar"
+                    android:layout_marginBottom="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+            />
+
+            <EditText
+                    android:id="@+id/edt_num_ano_bissexto"
+                    android:hint="@string/ano"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:inputType="number"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+            />
+
+            <TextView
+                    android:id="@+id/txv_result_ano_bissexto"
+                    android:hint="@string/resultado"
+                    android:layout_marginBottom="25dp"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+            />
+
+            <Button
+                    android:id="@+id/btn_verificar_ano_bissexto"
+                    android:text="@string/verificar"
+                    android:layout_marginBottom="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+            />
+
+        </LinearLayout>
+
+    </ScrollView>
 
     <Button
             android:id="@+id/btn_back"
