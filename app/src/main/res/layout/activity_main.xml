@@ -67,8 +67,8 @@
                     android:textAlignment="center"
             />
             <Button
-                    android:id="@+id/btn_to_screen_4"
-                    android:text="TextView"
+                    android:id="@+id/btn_to_screen_conversor_comprimento"
+                    android:text="@string/activity_name_conversor_de_comprimento"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="@dimen/Pedding"

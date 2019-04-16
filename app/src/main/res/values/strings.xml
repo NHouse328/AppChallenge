@@ -13,4 +13,5 @@
     <string name="temperatura">Temperatura</string>
     <string name="converter">Converter</string>
     <string name="ate">até :</string>
+    <string name="activity_name_conversor_de_comprimento">Conversor de Comprimento</string>
 </resources>
