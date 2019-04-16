@@ -76,7 +76,7 @@
                         android:hint="@string/temperatura"
                         android:textAlignment="center"
                         android:layout_height="wrap_content"
-                        android:inputType="number|numberDecimal"
+                        android:inputType="numberSigned|number|numberDecimal"
                 />
 
 

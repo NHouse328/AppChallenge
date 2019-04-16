@@ -4,9 +4,9 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_ano_bissesto.*
+import kotlinx.android.synthetic.main.activity_ano_bissexto.*
 
-class AnoBissestoActivity : AppCompatActivity(), View.OnClickListener {
+class AnoBissextoActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View) {
         val id = v.id
@@ -27,7 +27,7 @@ class AnoBissestoActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_ano_bissesto)
+        setContentView(R.layout.activity_ano_bissexto)
 
         vincular()
     }
@@ -40,7 +40,7 @@ class AnoBissestoActivity : AppCompatActivity(), View.OnClickListener {
     fun anoBissesto(ano: String): String {
         val Ano = ano.toInt()
 
-        val mensagem = "é um ano Bissesto"
+        val mensagem = "é um ano Bissexto"
 
         if ((Ano % 4) == 0) {
             if ((Ano % 100) != 0) {

@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
 
             R.id.btn_to_screen_ano_bissesto -> {
-                val intent = Intent(this, AnoBissestoActivity::class.java)
+                val intent = Intent(this, AnoBissextoActivity::class.java)
                 startActivity(intent)
             }
             R.id.btn_to_screen_conversor_temperatura -> {

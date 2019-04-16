@@ -11,7 +11,7 @@
             android:theme="@style/AppTheme">
         <activity android:name=".ConversorDeTemperaturaActivity">
         </activity>
-        <activity android:name=".AnoBissestoActivity">
+        <activity android:name=".AnoBissextoActivity">
         </activity>
         <activity android:name=".ParOuImparActivity">
         </activity>

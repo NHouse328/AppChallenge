@@ -52,7 +52,7 @@
             />
             <Button
                     android:id="@+id/btn_to_screen_ano_bissesto"
-                    android:text="@string/activity_name_ano_bissesto"
+                    android:text="@string/activity_name_ano_bissexto"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="@dimen/Pedding"
