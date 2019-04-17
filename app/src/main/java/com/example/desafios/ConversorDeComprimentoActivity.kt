@@ -59,7 +59,12 @@ class ConversorDeComprimentoActivity : AppCompatActivity(), View.OnClickListener
             "fentômetro (fm)",
             "attômetro (am)",
             "zeptômetro (zm)",
-            "yoctômetro (ym)"
+            "yoctômetro (ym)",
+            "milha (mi)",
+            "jarda (yd)",
+            "pé (ft)",
+            "polegada (in)",
+            "milha nautica"
         )
         val adapter = ArrayAdapter(this,android.R.layout.simple_spinner_dropdown_item,itens)
 
@@ -76,6 +81,8 @@ class ConversorDeComprimentoActivity : AppCompatActivity(), View.OnClickListener
     }
 
     private fun converterComprimento(de: Int,para: Int,comprimento: Double): String {
+
+        var comprimentoNovo = comprimento
 
         val primeiro = when (de) {
             0 -> 24.0
@@ -101,6 +108,15 @@ class ConversorDeComprimentoActivity : AppCompatActivity(), View.OnClickListener
             20 -> 24.0
             else -> 0.0
         }
+
+        when (de) {
+            21 -> comprimentoNovo = comprimento * 1609.344
+            22 -> comprimentoNovo = comprimento / 1.094
+            23 -> comprimentoNovo = comprimento / 3.281
+            24 -> comprimentoNovo = comprimento / 39.37
+            25 -> comprimentoNovo = comprimento * 1852
+        }
+
         val segundo = when (para) {
             0 -> 24.0
             1 -> 21.0
@@ -126,10 +142,20 @@ class ConversorDeComprimentoActivity : AppCompatActivity(), View.OnClickListener
             else -> 0.0
         }
 
+        var result:Double
 
-        val diferenca = segundo - primeiro
-        val result = comprimento * Math.pow(10.0, diferenca)
+        val diferenca = primeiro - segundo
+        result = comprimentoNovo * Math.pow(10.0, diferenca)
 
-        return result.toString()
+        when (para) {
+            21 -> result /= 1609.344
+            22 -> result *= 1.094
+            23 -> result *= 3.281
+            24 -> result *= 39.37
+            25 -> result /= 1852
+        }
+
+        return ("%.4f".format(result))
+
     }
 }
